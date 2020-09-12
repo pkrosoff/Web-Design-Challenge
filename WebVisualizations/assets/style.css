@@ -5,7 +5,10 @@
     color: rgb(55, 55, 184);
     text-align: center;
     margin-top: 20px;
-    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: auto
 }
 .table-responsive {
     margin-top: 20px;
@@ -19,4 +22,18 @@
     margin-bottom: 10px;
     margin-right: 50px;
     text-indent: 50px;
+}
+.columnleft {
+    width: 60%;
+    background-color:rgb(159, 159, 182);
+}
+.columnright {
+    background-color:rgb(97, 97, 150);
+    width: 40%;
+}
+.plot {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
 }
