@@ -1,0 +1,22 @@
+.img-fluid {
+    max-width: 100%;
+    height: auto}
+.header {
+    color: rgb(55, 55, 184);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+}
+.table-responsive {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px
+}
+.data-paragraph {
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    text-indent: 50px;
+}
