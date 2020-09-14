@@ -1,8 +1,22 @@
 .img-fluid {
     max-width: 100%;
     height: auto}
+.polaroid {
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    img {width: 100%;
+        margin-left: auto;
+        margin-right: auto;}
+    
+    div.container {
+    text-align: center;
+    padding: 30px 20px;
+    }
 .header {
-    color: rgb(55, 55, 184);
+    color: rgb(146, 33, 13);
     text-align: center;
     margin-top: 20px;
     margin-left: auto;
@@ -11,8 +25,8 @@
     max-height: auto
 }
 .sub-header {
-    color: rgb(55, 148, 184);
-    text-align: left;
+    color: rgb(71, 71, 71);
+    text-align: center;
     text-indent: 30px;
     margin-top: 10px;
     margin-left: auto;
