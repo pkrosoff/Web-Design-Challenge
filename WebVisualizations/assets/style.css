@@ -10,6 +10,16 @@
     max-width: 100%;
     max-height: auto
 }
+.sub-header {
+    color: rgb(55, 148, 184);
+    text-align: left;
+    text-indent: 30px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: auto
+}
 .table-responsive {
     margin-top: 20px;
     margin-left: 50px;
@@ -18,22 +28,106 @@
 }
 .data-paragraph {
     margin-top: 10px;
-    margin-left: 50px;
+    margin-left: 20px;
     margin-bottom: 10px;
     margin-right: 50px;
     text-indent: 50px;
 }
-.columnleft {
-    width: 60%;
-    background-color:rgb(159, 159, 182);
+.columns {
+    margin-left: 10px;
+    margin-right: 10px;
+    max-height: auto;
+    grid-column-gap: 20px;
 }
-.columnright {
-    background-color:rgb(97, 97, 150);
-    width: 40%;
-}
+
 .plot {
     display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 75%;
 }
+.grid-container {
+    grid-gap: 50px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Float four columns side by side */
+  .columnleft {
+    float: left;
+    width: 60%;
+    /* padding: 0 10px; */
+  }
+  .columnright {
+    float: left;
+    width: 40%;
+    /* padding: 0 10px; */
+  }
+
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 20px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 8px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  
+  Responsive columns - one column layout (vertical) on small screens
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  /* .vizcolumn {
+    flex: 50%;
+    max-width: 50s%;
+    padding: 0 4px;
+  } */
+  
+  .vizcolumn img {
+    margin-top: 12px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .vizcolumn {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other
+  @media screen and (max-width: 600px) {
+    .vizcolumn {
+      flex: 100%;
+      max-width: 100%;
+    }
+  } */
